@@ -9,7 +9,7 @@ object Day2 {
   def main(args: scala.Array[scala.Predef.String]): scala.Unit = {
     val input = Util.readInput("/day2.txt")
     println("Result of first part: " + input.map(findDiffMaxMin).sum)
-    println("Result of first part: " + input.map(findEvenlyQuotientOrZero).sum)
+    println("Result of second part: " + input.map(findEvenlyQuotientOrZero).sum)
   }
 
   def findDiffMaxMin(numbers: String): Int = {

@@ -16,4 +16,8 @@ object Util {
     }
   }
 
+  def replaceInList(list: List[Int], index: Int, value: Int) = {
+    list.patch(index, Seq(value), 1)
+  }
+
 }

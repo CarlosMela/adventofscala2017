@@ -19,7 +19,7 @@ object Day5 {
       if (index >= maze.length || index < 0) {
         counter
       } else {
-        val nextMaze = replaceInList(maze, index, offset(maze(index)))
+        val nextMaze = Util.replaceInList(maze, index, offset(maze(index)))
         recur(nextIndex(index, maze), nextMaze, counter + 1)
       }
     }
@@ -31,7 +31,4 @@ object Day5 {
     current + list(current)
   }
 
-  private def replaceInList(list: List[Int], index: Int, value: Int) = {
-    list.patch(index, Seq(value), 1)
-  }
 }
